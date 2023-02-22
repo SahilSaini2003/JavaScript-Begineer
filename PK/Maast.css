@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Main Div */
+  .container {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    color: green;
+    font-size: 15px;
+    position: fixed;
+  }
+  .end{
+    font-size: 25px;
+  }
+  
+  .wait {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+  }
+  
+  /* 2nd Box */
+  .main {
+    position: fixed;
+    color: rgb(26, 240, 26);
+    background-color: black;
+    width: 70vw;
+    height: 50vh;
+    top: 24vh;
+    left: 16vw;
+  }
+  
+  .name {
+    font-size: 10px;
+  }
+  
+  /* Loading */
+  .loader {
+    align-items: center;
+    border: 4px solid white;
+    border-top: 4px solid green;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    animation: spin 2s linear infinite;
+    padding: 1px;
+    margin: auto;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  /* Line Loading */
+  .lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    margin-top: 0px;
+    padding-top: 0px;
+    height: 10px;
+  }
+  
+  .lds-facebook div {
+    /* display: inline-block; */
+    position: absolute;
+    left: 2px;
+    width: 2px;
+    background: rgb(26, 240, 26);
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  
+  .lds-facebook div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+  }
+  
+  .lds-facebook div:nth-child(2) {
+    left: 16px;
+    animation-delay: -0.12s;
+  }
+  
+  .lds-facebook div:nth-child(3) {
+    left: 24px;
+    animation-delay: 0;
+  }
+  
+  @keyframes lds-facebook {
+    0% {
+      top: 0px;
+      height: 10px;
+    }
+  }
+ 
