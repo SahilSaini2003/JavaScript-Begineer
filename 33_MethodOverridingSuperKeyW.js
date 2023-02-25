@@ -13,6 +13,7 @@ class Programmer extends Employee{
     }
     logout(){
         super.logout("Programmer")  // Used to called The same Function of Parant Class!!!
+        super.login()
     }
 }
 
