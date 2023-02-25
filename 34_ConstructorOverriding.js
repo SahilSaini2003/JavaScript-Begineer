@@ -27,8 +27,6 @@ class Programmer extends Employee{
     }
     logout(){
         super.logout("Programmer")
-
-        
     }
 }
 
