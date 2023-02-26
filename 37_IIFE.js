@@ -26,4 +26,4 @@ let a = (() => {
     console.log(a2)
     let a3 = await a()
     console.log(a3)
-})();    //Throwing Error in VS Code But Running In Browser Console
+})();    //Throwing Error in VS Code Terminal But Running In Browser Console...
